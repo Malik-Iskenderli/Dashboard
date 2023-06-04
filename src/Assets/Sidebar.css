@@ -1,0 +1,55 @@
+.sidebar{
+    background-color:#E9EDF0;
+    width: 300px;
+    height: 100vh;
+    transition: 1s ease;
+    box-shadow: 1px 0 8px 3px #bcbec0;
+}
+.logo-sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+} 
+.logo-sidebar  button{
+    border: none;
+    background-color: inherit;
+    margin-left: 1rem;
+
+} 
+.logo-sidebar  button i {
+    font-size: 30px;
+    font-weight: 700;
+    color: #7abfff;
+    /* margin-left: 1rem; */
+}
+.logo-sidebar button i:hover{
+    color: #1A3B54;
+    transition: 0.3s ease;
+}
+.pages{
+margin-top: 4rem;
+}
+.pages ul li{
+    list-style: none;
+}
+.pages ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: 1s ease;
+
+}
+.pages ul li a{
+    text-decoration: none;
+    color: #1A3B54;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.pages ul li a:hover{
+    color: #7abfff;
+    transition: 0.3s ease;
+}
