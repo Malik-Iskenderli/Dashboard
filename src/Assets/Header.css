@@ -1,6 +1,7 @@
 :root{
 --blue: #7DB5FA;
 --darkBlue: #1A3B54;
+--bgIconColor: #FBFBFC;
 }
 .navbar{
     width: 100%;
@@ -16,6 +17,32 @@
     display: flex;
     align-items: center;
 }
+.prof-img{
+position: relative;
+}
+.icon-open{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 180px;
+    background-color: var(--bgIconColor);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 2px 3px 5px var(--blue);
+}
+.icon-open span{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+.icon-open span:hover{
+    background-color: var(--blue);
+    color: var(--darkBlue);
+    border-radius: 10px;
+    padding: 5px 0 0 5px;
+}
+
 .profile h4{
     margin-left: 1rem;
     color: var(--darkBlue);
@@ -29,21 +56,190 @@ border: 2px solid var(--blue);
 padding: 2px;
 cursor: pointer;
 }
+.profile .prof-img img:hover{
+    border-color: 2px solid var(--darkBlue);
+    transition: 0.3s ease;
+}
 .butn-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-    /* position: absolute; */
-   
+    gap: 1rem;   
 }
+.butn-header .icon-open-lang{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: var(--bgIconColor);
+    width: 180px;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 2px 3px 5px var(--blue);
+}
+.butn-header .icon-open-lang span{
+    display: flex;
+    gap: 1rem; 
+}
+.butn-header .icon-open-lang span:hover{
+    background-color: var(--blue);
+    color: var(--darkBlue);
+    border-radius: 10px;
+    padding: 5px 0 0 5px;
+}
+.butn-header .icon-open-bell{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: var(--bgIconColor);
+    width: 650px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: 2px 3px 5px var(--blue);    
+}
+.butn-header .icon-open-bell span{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.butn-header .icon-open-bell span p{
+    margin-top: 20px;
+}
+.butn-header .icon-open-bell span:hover{
+    background-color: var(--blue);
+    color: var(--darkBlue);
+    border-radius: 10px;
+    padding: 0 0 0 5px;
+}
+
 .butn-header button{
-    border: none;
     background-color: inherit;
+    position: relative;
+    border: none;
+
 }
 .butn-header button i {
     font-size: 24px;
     font-weight: 700;
     color: var(--darkBlue);
 }
+.butn-header button i:hover{
+    color: var(--blue);
+    transition: 0.3s ease;
+}
+.theme-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: var(--bgIconColor);
+    height: 100vh;
+    padding: 15px;
+    box-shadow: 0 0 4px 4px var(--darkBlue, 0.1 );
+    transition: 1s ease;
 
+}
+.theme-icon .theme-settings-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.theme-icon .theme-settings-header span{
+    color: var(--darkBlue);
+    font-size: 24px;
+}
+.theme-icon .theme-settings-header button{
+    border: none;
+    background-color: inherit;
+    font-size: 24px;
+}
+.theme-icon .theme-settings-header button:hover{
+    color: var(--blue);
+    transition: 0.3s ease;
+}
+.choose-mood{
+    margin-top: 40px;
+}
+.choose-mood h6{
+    color: var(--darkBlue);
+}
+.choose-mood .dark-light{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+.choose-mood .dark-light .light,
+.choose-mood .dark-light .dark{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    padding: 10px 0 0 5px;
+}
+.choose-mood .dark-light .dark.dark:hover,
+.choose-mood .dark-light .light:hover{
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+.choose-mood .dark-light .light>div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+.choose-mood .dark-light .dark>div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+.choose-color{
+    margin-top: 40px;
+}
+.choose-color h6{
+    color: var(--darkBlue);
+}
+.choose-color .colors{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+.choose-color .colors>div{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+.choose-color .colors>div:hover{
+    background-color: var(--blue);
+    color: white;
+    border-radius: 10px;
+}
+.choose-color .colors .blue i {
+    font-size: 30px;
+    color: blue;
+    padding: 10px;
+}
+.choose-color .colors .red i {
+    font-size: 30px;
+    color: red;
+    padding: 10px;
+
+}
+.choose-color .colors .cyan i {
+    font-size: 30px;
+    color: cyan;
+    padding: 10px;
+
+}
+.choose-color .colors .green i {
+    font-size: 30px;
+    color: green;
+    padding: 10px;
+
+}
+.choose-color .colors .orange i {
+    font-size: 30px;
+    color: orange;
+    padding: 10px;
+    
+}

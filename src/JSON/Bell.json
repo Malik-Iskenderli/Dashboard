@@ -1,0 +1,27 @@
+[
+    {
+        "id": 0,
+        "icon":  "bi bi-exclamation-triangle",
+        "title": "Cirabitur id eros quis nunc suscipit blandit"
+    },
+    {
+        "id": 1,
+        "icon":  "bi bi-box-seam",
+        "title": "Duis malesuada justo eu sapien elementum, in semper diam posuere"
+    },
+    {
+        "id": 2,
+        "icon":  "bi bi-cart2",
+        "title": "Donec at nisi sit amet tortor commodo porttitor pretium a erat"
+    },
+    {
+        "id": 3,
+        "icon":  "bi bi-exclamation-triangle",
+        "title": "In gravida mauris et nisi"
+    },
+    {
+        "id": 4,
+        "icon":  "bi bi-cart2",
+        "title": "Curabitur id eros quis nunc suscipit blandit"
+    }
+]

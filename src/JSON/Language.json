@@ -1,0 +1,17 @@
+[
+    {
+        "id": 0,
+        "icon":  "bi bi-flag-fill",
+        "title": "Azerbaijani"
+    },
+    {
+        "id": 1,
+        "icon":  "bi bi-flag-fill",
+        "title": "Turkish"
+    },
+    {
+        "id": 2,
+        "icon":  "bi bi-flag-fill",
+        "title": "Russian"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "icon":  "bi bi-person",
+        "title": "Profile"
+    },
+    {
+        "id": 1,
+        "icon":  "bi bi-wallet2",
+        "title": "My Wallet"
+    },
+    {
+        "id": 2,
+        "icon":  "bi bi-gear",
+        "title": "Settings"
+    },
+    {
+        "id": 2,
+        "icon":  "bi bi-box-arrow-right",
+        "title": "Logout"
+    }
+    
+]

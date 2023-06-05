@@ -1,3 +1,22 @@
+:root{
+    --blue: #7DB5FA;
+    --darkBlue: #1A3B54;
+    --bgIconColor: #FBFBFC;
+    }
 .dashboard{
-    margin-top: 100px;
+    padding: 40px 0 0 30px;
 }
+.dashboard h1{
+    color: var(--darkBlue);
+}
+.cards{
+    display: flex;
+    background-color: var(--bgIconColor);
+    gap: 2rem;
+}
+.count-title{
+    display: flex;
+    flex-direction: column;
+}
+
+

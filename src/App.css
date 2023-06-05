@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 .App{
-    display: grid;
-    grid-template-areas:
-    'sidebar sidebar header header header header'
-    'msidebar sidebar  main main main  main'
-    'sidebaar sidebar main main main main';   
-     gap: 1rem;
+   display: flex;
+}
+.header-parents{
+    width: 100%;
 }
