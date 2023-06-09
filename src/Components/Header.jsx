@@ -87,6 +87,7 @@ const Header = ({ Tabs }) => {
                 </span>
               ))
             }
+            <button>View All</button>
           </div>
         </button>
         <button

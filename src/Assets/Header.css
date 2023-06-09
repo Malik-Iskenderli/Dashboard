@@ -20,6 +20,10 @@
 .prof-img{
 position: relative;
 }
+.prof-img img{
+    background-size: cover;
+    background-attachment: fixed;
+}
 .icon-open{
     display: block;
     position: absolute;
@@ -94,8 +98,22 @@ cursor: pointer;
     width: 650px;
     border-radius: 10px;
     padding: 10px 10px;
-    box-shadow: 2px 3px 5px var(--blue);    
+    box-shadow: 2px 3px 5px var(--blue); 
+    z-index: 999;   
 }
+.butn-header .icon-open-bell button{
+    background-color: var(--blue);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.butn-header .icon-open-bell button:hover{
+    background-color: var(--darkBlue);
+    transition: 0.3s ease;
+    color: white;
+}
+
 .butn-header .icon-open-bell span{
     display: flex;
     align-items: center;
@@ -135,7 +153,8 @@ cursor: pointer;
     height: 100vh;
     padding: 15px;
     box-shadow: 0 0 4px 4px var(--darkBlue, 0.1 );
-    transition: 1s ease;
+    z-index: 9999;
+    animation: aninme 1s ease;
 
 }
 .theme-icon .theme-settings-header{
@@ -241,5 +260,16 @@ cursor: pointer;
     font-size: 30px;
     color: orange;
     padding: 10px;
-    
+
+}
+
+@keyframes aninme {
+    from{
+        transform: translateX(102%);
+        opacity: 0.3;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
