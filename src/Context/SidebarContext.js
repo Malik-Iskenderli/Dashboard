@@ -2,6 +2,7 @@ import { createContext, useState } from "react";
 import React from "react";
 
 
+
 const SidebarContext = createContext()
 
 
@@ -12,6 +13,10 @@ export const SidebarContextProvider = ({children}) => {
     const [openLang, setOpenLang] = useState(true)
     const [openBell, setOpenBell] = useState(true)
     const [openTheme,setOpenTheme] = useState(true)
+    const [openColumn, setOpenColumn] = useState(true)
+    const [api,setApi] = useState([])
+    const [tableHeader,setTableHeader] = useState([])
+    const [openModal, setOpenModal] = useState(true);
 
     const data = {
         sidebar,
@@ -23,7 +28,15 @@ export const SidebarContextProvider = ({children}) => {
         openBell,
         setOpenBell,
         openTheme,
-        setOpenTheme
+        setOpenTheme,
+        openColumn,
+        setOpenColumn,
+        api,
+        setApi,
+        tableHeader,
+        setTableHeader,
+        openModal,
+        setOpenModal
     }
 
     return(

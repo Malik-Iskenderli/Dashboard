@@ -15,7 +15,7 @@
     /* justify-content: center; */
     padding: 1rem;
 }
-.BgCards{
+/* .BgCards{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -23,26 +23,35 @@
     background-color: red;
     margin-right: 1rem;
     min-width: 400px;
+} */
+.BgCards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    padding-top: 1rem;
+    
 }
 .block{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--bgIconColor);
-    min-width: 220px;
+    min-width: 205px;
     height: 150px;
     border-radius: 20px;
     box-shadow: 3px 2px 1px var(--darkBlue);
     position: relative;
     z-index: 1;
+    margin: 0.5rem 1rem 0.5rem 0;
 }
 
 .block::after {
     content: "";
     position: absolute;
     opacity: 0;
-    top: 0;
-    left: 0;
+    top: 1px;
+    left: 1px;
     background-color: var(--blue);
     transition: all 0.5s ease;
     width: 100%;
@@ -50,8 +59,8 @@
     clip-path: ellipse(175px 160px at -30% -36%);
   }
   .block:hover::after {
-    top: 0;
-    left: 0;
+    top: 1px;
+    left: 1px;
     clip-path: ellipse(155px 140px at 10% -6%);
     transition: all 0.5s ease;
     z-index: -1;
